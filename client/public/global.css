@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Source Code Pro|Roboto Slab|Droid+Sans');
+
+:root {
+  --color--success--100: hsl(142, 65%, 95%);
+  --color--success--200: hsl(143, 59%, 85%);
+  --color--success--300: hsl(144, 54%, 75%);
+  --color--success--400: hsl(145, 49%, 66%);
+  --color--success--500: hsl(146, 43%, 40%);
+  --color--success--600: hsl(147, 38%, 46%);
+  --color--success--700: hsl(148, 33%, 37%);
+  --color--success--800: hsl(149, 28%, 27%);
+  --color--success--900: hsl(150, 23%, 17%);
+
+  --color--error--100: hsl(339, 83%, 95%);
+  --color--error--200: hsl(340, 79%, 85%);
+  --color--error--300: hsl(341, 75%, 75%);
+  --color--error--400: hsl(342, 72%, 66%);
+  --color--error--500: hsl(343, 65%, 60%);
+  --color--error--600: hsl(344, 64%, 46%);
+  --color--error--700: hsl(345, 61%, 37%);
+  --color--error--800: hsl(346, 57%, 27%);
+  --color--error--900: hsl(347, 53%, 17%);
+
+  --color--brand-primary--100: hsl(198, 65%, 95%);
+  --color--brand-primary--200: hsl(199, 59%, 85%);
+  --color--brand-primary--300: hsl(200, 54%, 75%);
+  --color--brand-primary--400: hsl(201, 49%, 66%);
+  --color--brand-primary--500: hsl(202, 66%, 39%);
+  --color--brand-primary--600: hsl(203, 38%, 46%);
+  --color--brand-primary--700: hsl(204, 33%, 37%);
+  --color--brand-primary--800: hsl(205, 28%, 27%);
+  --color--brand-primary--900: hsl(206, 23%, 17%);
+
+  --color--brand-secondary--100: hsl(339, 83%, 95%);
+  --color--brand-secondary--200: hsl(340, 79%, 85%);
+  --color--brand-secondary--300: hsl(341, 75%, 75%);
+  --color--brand-secondary--400: hsl(342, 72%, 66%);
+  --color--brand-secondary--500: hsl(343, 65%, 60%);
+  --color--brand-secondary--600: hsl(344, 64%, 46%);
+  --color--brand-secondary--700: hsl(345, 61%, 37%);
+  --color--brand-secondary--800: hsl(346, 57%, 27%);
+  --color--brand-secondary--900: hsl(347, 53%, 17%);
+
+  --color--brand-accent--100: hsl(37, 100%, 95%);
+  --color--brand-accent--200: hsl(38, 94%, 85%);
+  --color--brand-accent--300: hsl(39, 88%, 75%);
+  --color--brand-accent--400: hsl(40, 83%, 66%);
+  --color--brand-accent--500: hsl(41, 81%, 44%);
+  --color--brand-accent--600: hsl(43, 72%, 46%);
+  --color--brand-accent--700: hsl(47, 66%, 37%);
+  --color--brand-accent--800: hsl(51, 61%, 27%);
+  --color--brand-accent--900: hsl(55, 55%, 17%);
+
+  --color--ux--100: hsl(222, 23%, 95%);
+  --color--ux--200: hsl(225, 21%, 86%);
+  --color--ux--300: hsl(229, 19%, 77%);
+  --color--ux--400: hsl(232, 17%, 69%);
+  --color--ux--500: hsl(236, 15%, 60%);
+  --color--ux--600: hsl(239, 13%, 51%);
+  --color--ux--700: hsl(243, 11%, 43%);
+  --color--ux--800: hsl(246, 9%, 34%);
+  --color--ux--900: hsl(250, 7%, 25%);
+
+  --color--brand--primary: var(--color--brand-primary--700, black);
+  --color--brand--primary--lighter: var(--color--brand-primary--500, #333);
+  --color--brand--primary--darker: var(--color--brand-primary--500, black);
+
+  --color--brand--secondary: var(
+    --color--brand-secondary--500,
+    hsl(217, 70%, 50%)
+  );
+  --color--brand--secondary--lighter: var(
+    --color--brand-secondary--400,
+    hsl(217, 70%, 65%)
+  );
+
+  --color--brand--secondary--darker: var(
+    --color--brand-secondary--700,
+    hsl(217, 40%, 30%)
+  );
+
+  --color--brand--tertiary: var(--color--brand-secondary--400);
+  --color--brand--accent: var(--color--brand-accent-700);
+  --color--brand--muted: var(--color--brand-primary--100);
+
+  --color--ui--primary: var(--color--ux--900);
+  --color--ui--secondary: var(--color--ux--700);
+  --color--ui--tertiary: var(--color--ux--200);
+  --color--ui--disabled: var(--color--ux--100);
+
+  --color--ui--error: var(--color--error--500);
+  --color--ui--success: var(--color--success--500);
+  --color--bg--primary: hsl(48, 24%, 96%);
+  --color--bg--secondary: var(--color--ux--100);
+
+  --color--bg--error: var(--color--error--100);
+  --color--bg--success: var(--color--green--100);
+
+  --color--text--primary: var(--color--ux--900);
+  --color--text--secondary: var(--color--ux--600);
+  --color--text--disabled: var(--color--ux--400);
+  --color--text--inverse: hsl(48, 24%, 96%);;
+  --color--text--error: var(--color--error--500);
+  --color--text--success: var(--color--success--500);
+
+--column-dp: 8px;
+--space-1q: calc(var(--space-base) / 4);
+--space-1h: calc(var(--space-base) / 2);
+--space-base: var(--column-dp);
+--space-1x: var(--space-base);
+--space-2x: calc(var(--space-base) * 2);
+--space-3x: calc(var(--space-base) * 3);
+--space-4x: calc(var(--space-base) * 4);
+--space-6x: calc(var(--space-base) * 6);
+--space-8x: calc(var(--space-base) * 8);
+--space-12x: calc(var(--space-base) * 12);
+--space-16x: calc(var(--space-base) * 16);
+--space-20x: calc(var(--space-base) * 20);
+--space-24x: calc(var(--space-base) * 24);
+--space-32x: calc(var(--space-base) * 32);
+--space-40x: calc(var(--space-base) * 40);
+--space-48x: calc(var(--space-base) * 48);
+--space-72x: calc(var(--space-base) * 72);
+--space-81x: calc(var(--space-base) * 81);
+--space-96x: calc(var(--space-base) * 96);
+
+
+}
+
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  color: #333;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: var(--color--bg--primary);
+  height: 100%;
+  margin: auto;
+  /**
+   * This font-family stack is meant to match that of create-react-app.
+   *
+   * On Linux, Firefox consults a third-party tool called fontconfig when
+   * deciding which fonts to display. fontconfig maps the names of proprietary
+   * fonts (e.g., Helvetica) to similar but non-identical free fonts (e.g.,
+   * Nimbus Sans), which Firefox uses instead.[1][2]
+   *
+   * This particular mapping can be a problem. Nimbus Sans is not a great
+   * replacement for Helvetica because it has an em-box which leaves a large
+   * amount of empty space below the baseline. This causes text not to appear
+   * vertically-centered when it should.
+   *
+   * fontconfig does not map the name Helvetica Neue to Nimbus Sans, so it's a
+   * better choice than Helvetica here. Arial has a reasonable replacement and
+   * the default sans-serif font is also fine.
+   *
+   * [1] https://nolanlawson.com/2020/05/02/customizing-fonts-in-firefox-on-linux/
+   * [2] https://bugzilla.mozilla.org/show_bug.cgi?id=553580
+   */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+
+a {
+  color: rgb(0, 100, 200);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: rgb(0, 80, 160);
+}
+
+label {
+  display: block;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0.4em;
+  margin: 0 0 0.5em 0;
+  box-sizing: border-box;
+  border: 1px solid #var(--color--bg--primary);
+  border-radius: 2px;
+}
+
+input:disabled {
+  color: var(--color--bg--primary);
+}
+
+button {
+  color: #333;
+  background-color: #var(--color--bg--primary);
+  outline: none;
+}
+
+button:disabled {
+  color: #999;
+}
+
+button:not(:disabled):active {
+  background-color: var(--color--bg--primary);
+}
+
+button:focus {
+  border-color: #666;
+}
+
+.app > header {
+  padding-bottom: var(--space-1x);
+}
+
+header h1 {
+  margin: 0px;
+  color: var(--cool-gray-800);
+}
+
+header h1 span {
+  font-weight: normal;
+}
+
+header ul {
+  display: grid;
+  grid-column-gap: var(--space-2x);
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.app {
+	/* background-color: var(--color--bg--primary); */
+	/* background-color: var(--color--brand-accent--100); */
+
+	width: 1200px;
+	height: 100%;
+	padding-left: var(--space-2x);
+	padding-right: var(--space-2x);
+	margin: auto;
+}
+
+header nav {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: var(--space-2x);
+  align-content: end;
+  justify-content: start;
+  align-items: end;
+}
+
