@@ -2874,9 +2874,9 @@ var app = (function () {
     const file$3 = "src/App.svelte";
 
     function create_fragment$3(ctx) {
-    	let div4;
+    	let div6;
     	let header;
-    	let div3;
+    	let div5;
     	let aside0;
     	let h10;
     	let t0;
@@ -2891,13 +2891,17 @@ var app = (function () {
     	let p1;
     	let t6;
     	let article;
-    	let t7;
+    	let div4;
+    	let div3;
+    	let a;
+    	let a_href_value;
+    	let t8;
     	let main;
     	let h11;
-    	let t8;
     	let t9;
     	let t10;
     	let t11;
+    	let t12;
     	let switch_instance;
     	let current;
     	var switch_value = /*currentPage*/ ctx[1].body;
@@ -2916,9 +2920,9 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
-    			div4 = element("div");
+    			div6 = element("div");
     			header = element("header");
-    			div3 = element("div");
+    			div5 = element("div");
     			aside0 = element("aside");
     			h10 = element("h1");
     			t0 = text("Title\n                ");
@@ -2936,66 +2940,79 @@ var app = (function () {
     			p1.textContent = "menu 2";
     			t6 = space();
     			article = element("article");
-    			t7 = space();
+    			div4 = element("div");
+    			div3 = element("div");
+    			a = element("a");
+    			a.textContent = "Random Number";
+    			t8 = space();
     			main = element("main");
     			h11 = element("h1");
-    			t8 = text("Flask + Svelte: Hello ");
-    			t9 = text(/*name*/ ctx[0]);
-    			t10 = text("!");
-    			t11 = space();
+    			t9 = text("Flask + Svelte: Hello ");
+    			t10 = text(/*name*/ ctx[0]);
+    			t11 = text("!");
+    			t12 = space();
     			if (switch_instance) create_component(switch_instance.$$.fragment);
-    			add_location(span, file$3, 82, 16, 1917);
-    			add_location(h10, file$3, 80, 14, 1874);
+    			add_location(span, file$3, 82, 16, 2016);
+    			add_location(h10, file$3, 80, 14, 1973);
     			attr_dev(aside0, "class", "aside aside-3 svelte-1tvpub6");
-    			add_location(aside0, file$3, 79, 12, 1830);
-    			add_location(p0, file$3, 88, 20, 2123);
+    			add_location(aside0, file$3, 79, 12, 1929);
+    			add_location(p0, file$3, 88, 20, 2222);
     			attr_dev(div0, "class", "view-item");
-    			add_location(div0, file$3, 87, 16, 2079);
-    			add_location(p1, file$3, 91, 20, 2220);
+    			add_location(div0, file$3, 87, 16, 2178);
+    			add_location(p1, file$3, 91, 20, 2319);
     			attr_dev(div1, "class", "view-item");
-    			add_location(div1, file$3, 90, 16, 2176);
+    			add_location(div1, file$3, 90, 16, 2275);
     			attr_dev(div2, "class", "right-menu svelte-1tvpub6");
-    			add_location(div2, file$3, 86, 14, 2036);
+    			add_location(div2, file$3, 86, 14, 2135);
     			attr_dev(aside1, "class", "aside aside-4 svelte-1tvpub6");
-    			add_location(aside1, file$3, 85, 12, 1992);
+    			add_location(aside1, file$3, 85, 12, 2091);
+    			attr_dev(a, "href", a_href_value = `/rand`);
+    			add_location(a, file$3, 98, 39, 2523);
+    			attr_dev(div3, "class", "view-item");
+    			add_location(div3, file$3, 98, 16, 2500);
+    			attr_dev(div4, "class", "center-menu svelte-1tvpub6");
+    			add_location(div4, file$3, 97, 14, 2456);
     			attr_dev(article, "class", "main svelte-1tvpub6");
-    			add_location(article, file$3, 96, 12, 2320);
-    			attr_dev(div3, "class", "wrapper svelte-1tvpub6");
-    			add_location(div3, file$3, 78, 8, 1796);
-    			add_location(header, file$3, 77, 4, 1779);
-    			add_location(h11, file$3, 113, 8, 2780);
-    			add_location(main, file$3, 112, 4, 2765);
-    			attr_dev(div4, "class", "app");
-    			add_location(div4, file$3, 76, 0, 1755);
+    			add_location(article, file$3, 96, 12, 2419);
+    			attr_dev(div5, "class", "wrapper svelte-1tvpub6");
+    			add_location(div5, file$3, 78, 8, 1895);
+    			add_location(header, file$3, 77, 4, 1878);
+    			add_location(h11, file$3, 113, 8, 2870);
+    			add_location(main, file$3, 112, 4, 2855);
+    			attr_dev(div6, "class", "app");
+    			add_location(div6, file$3, 76, 0, 1854);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, div4, anchor);
-    			append_dev(div4, header);
-    			append_dev(header, div3);
-    			append_dev(div3, aside0);
+    			insert_dev(target, div6, anchor);
+    			append_dev(div6, header);
+    			append_dev(header, div5);
+    			append_dev(div5, aside0);
     			append_dev(aside0, h10);
     			append_dev(h10, t0);
     			append_dev(h10, span);
-    			append_dev(div3, t2);
-    			append_dev(div3, aside1);
+    			append_dev(div5, t2);
+    			append_dev(div5, aside1);
     			append_dev(aside1, div2);
     			append_dev(div2, div0);
     			append_dev(div0, p0);
     			append_dev(div2, t4);
     			append_dev(div2, div1);
     			append_dev(div1, p1);
-    			append_dev(div3, t6);
-    			append_dev(div3, article);
-    			append_dev(div4, t7);
-    			append_dev(div4, main);
+    			append_dev(div5, t6);
+    			append_dev(div5, article);
+    			append_dev(article, div4);
+    			append_dev(div4, div3);
+    			append_dev(div3, a);
+    			append_dev(div6, t8);
+    			append_dev(div6, main);
     			append_dev(main, h11);
-    			append_dev(h11, t8);
     			append_dev(h11, t9);
     			append_dev(h11, t10);
-    			append_dev(main, t11);
+    			append_dev(h11, t11);
+    			append_dev(main, t12);
 
     			if (switch_instance) {
     				mount_component(switch_instance, main, null);
@@ -3004,7 +3021,7 @@ var app = (function () {
     			current = true;
     		},
     		p: function update(ctx, [dirty]) {
-    			if (!current || dirty & /*name*/ 1) set_data_dev(t9, /*name*/ ctx[0]);
+    			if (!current || dirty & /*name*/ 1) set_data_dev(t10, /*name*/ ctx[0]);
     			const switch_instance_changes = {};
     			if (dirty & /*currentPage*/ 2) switch_instance_changes.params = /*currentPage*/ ctx[1].params;
 
@@ -3043,7 +3060,7 @@ var app = (function () {
     			current = false;
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div4);
+    			if (detaching) detach_dev(div6);
     			if (switch_instance) destroy_component(switch_instance);
     		}
     	};
@@ -3093,12 +3110,13 @@ var app = (function () {
     	}
 
     	page("/", () => setPage({ params: { page: "rand", view: "test" } }), updateAfterMoving);
+    	page("/rand", () => setPage({ params: { page: "rand", view: "test" } }), updateAfterMoving);
     	page("/:page/:view", setPage);
     	page({ hashbang: true });
     	let mounted = false;
 
     	onMount(() => {
-    		$$invalidate(2, mounted = true);
+    		mounted = true;
     	});
 
     	const writable_props = ["name"];
@@ -3127,20 +3145,14 @@ var app = (function () {
     	$$self.$inject_state = $$props => {
     		if ("name" in $$props) $$invalidate(0, name = $$props.name);
     		if ("currentPage" in $$props) $$invalidate(1, currentPage = $$props.currentPage);
-    		if ("mounted" in $$props) $$invalidate(2, mounted = $$props.mounted);
+    		if ("mounted" in $$props) mounted = $$props.mounted;
     	};
 
     	if ($$props && "$$inject" in $$props) {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	$$self.$$.update = () => {
-    		if ($$self.$$.dirty & /*mounted*/ 4) {
-    			 if (mounted) updateQueryString("");
-    		}
-    	};
-
-    	return [name, currentPage, mounted];
+    	return [name, currentPage];
     }
 
     class App extends SvelteComponentDev {

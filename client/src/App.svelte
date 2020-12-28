@@ -16,8 +16,8 @@
         ctx.path += `?currentQuery`;
         ctx.save();
     }
-
     page("/", () => setPage({ params: { page: 'rand', view: 'test' } }), updateAfterMoving);
+    page("/rand", () => setPage({ params: { page: 'rand', view: 'test' } }), updateAfterMoving);
     page("/:page/:view", setPage);
     page({ hashbang: true });
 
@@ -39,7 +39,7 @@
     let mounted = false;
     onMount(() => { mounted = true });
 
-    $: if (mounted) updateQueryString('');
+    // $: if (mounted) updateQueryString('');
     
 </script>
 
@@ -95,9 +95,9 @@
             </aside>
       
             <article class="main">
-              <!-- <div class = 'center-menu'>
+              <div class = 'center-menu'>
                 <div class="view-item"><a href={`/rand`}>Random Number</a></div>
-             </div> -->
+             </div>
             </article>
 
             <!-- <aside class="aside aside-1">
