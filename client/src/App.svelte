@@ -79,39 +79,14 @@
         <div class="wrapper">
             <aside class="aside aside-3">
               <h1>
-                Title
-                <span>Subtitle</span>
+                Flask + Svelte:
+                <span>A data science web app.</span>
               </h1>
             </aside>
-            <aside class="aside aside-4">
-              <div class = 'right-menu'>
-                <div class="view-item">
-                    <p>menu 1</p>
-                </div>
-                <div class="view-item">
-                    <p>menu 2</p>
-                </div>
-                </div>
-            </aside>
-      
-            <article class="main">
-              <div class = 'center-menu'>
-                <div class="view-item"><a href={`/rand`}>Random Number</a></div>
-             </div>
-            </article>
-
-            <!-- <aside class="aside aside-1">
-                <p>hold</p>
-            </aside>
-      
-            <aside class="aside aside-2">
-                <p>hold</p>
-            </aside>
-             -->
           </div>
     </header>
     <main>
-        <h1>Flask + Svelte: Hello {name}!</h1>
+        <h1> Hello {name}!</h1>
         <svelte:component this={currentPage.body} params={currentPage.params} on:inputForm="{addInput}" />
 
     </main>

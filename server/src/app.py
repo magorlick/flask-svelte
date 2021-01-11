@@ -1,18 +1,18 @@
 from flask import Flask, send_from_directory, request
 import random
-import json
+import json, os
 
-app = Flask(__name__, static_url_path='/../client/public')
+app = Flask(__name__, static_url_path='/../../client/public')
 
 # Path for our main Svelte page
 @app.route("/")
 def base():
-    return send_from_directory('../client/public', 'index.html')
+    return send_from_directory('../../client/public', 'index.html')
 
 # Path for all the static files (compiled JS/CSS, etc.)
 @app.route("/<path:path>")
 def home(path):
-    return send_from_directory('../client/public', path)
+    return send_from_directory('../../client/public', path)
 
 # Tests Python Flask connection
 @app.route("/rand")
@@ -36,4 +36,4 @@ def randData():
     return data
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5080)
+    app.run(debug=True, host='0.0.0.0', port=int(os.environ.get('PORT', 8080)))
